@@ -1,0 +1,730 @@
+body
+{
+    font-family: 'PT Sans', sans-serif;
+
+    text-transform: uppercase;
+
+    color: #000;
+    background: #f2f2f2;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.menu
+{
+    display: flex;
+}
+
+.menu-logo
+{
+    position: relative;
+
+    text-align: center;
+
+    flex-grow: 1;
+}
+
+.menu-logo-img
+{
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.menu-list
+{
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu-item
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+
+    width: 240px;
+
+    text-align: center;
+}
+
+.menu-link
+{
+    display: block;
+
+    padding: 15px 20px;
+
+    transition: .15s color;
+    text-decoration: none;
+
+    color: #000;
+}
+
+.menu-link:hover,
+.menu-link:focus
+{
+    color: #81b3d2;
+}
+
+.menu-link:active
+{
+    color: rgba(0, 0, 0, .3);
+}
+
+.hero
+{
+    padding-top: 76px;
+    padding-bottom: 80px;
+
+    background-color: #f4b1a4;
+    background-image: url('../img/intro-mask.svg'),
+    url('../img/background-photo.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom -2px,
+    center -83px;
+    background-size: contain,
+    cover;
+}
+
+.hero-img
+{
+    display: block;
+
+    margin: 0 auto;
+}
+
+.title
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+
+    width: 620px;
+    margin: 60px auto 27px;
+
+    text-align: center;
+}
+
+.subtitle
+{
+    font-size: 14px;
+    line-height: 1.86;
+
+    margin: 0 0 50px;
+    padding: 0 40px;
+
+    text-align: center;
+
+    color: #333;
+}
+
+.reasons
+{
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.reasons-img-container
+{
+    background-size: cover;
+
+    flex-basis: 66.66666666%;
+}
+
+.reasons-img-city
+{
+    background-image: url('../img/sedona-city.jpg');
+}
+
+.reasons-img-bridge
+{
+    background-image: url('../img/most.jpg');
+}
+
+.reason
+{
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 48px 20px 60px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #81b3d2;
+
+    align-items: center;
+    flex-basis: 33.33333333%;
+}
+
+.reason-title
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+
+    width: 190px;
+    margin: 0 0 25px;
+}
+
+.reason-number
+{
+    font-size: 14px;
+    line-height: 16px;
+
+    margin: 0 0 24px;
+}
+
+.reason-number::before
+{
+    content: '− № ';
+}
+
+.reason-number::after
+{
+    content: ' −';
+}
+
+.reason-text
+{
+    font-size: 14px;
+    line-height: 1.5;
+
+    width: 280px;
+    margin: 0;
+}
+
+.reason-grey
+{
+    background: #eee;
+}
+
+.reason-grey .reason-title
+{
+    color: #000;
+}
+
+.reason-grey .reason-number,
+.reason-grey .reason-text
+{
+    color: #333;
+}
+
+.advice
+{
+    display: flex;
+
+    flex-basis: 100%;
+}
+
+.advice-item
+{
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 56px 20px 81px;
+
+    text-align: center;
+
+    align-items: center;
+    flex-basis: 33.33333333%;
+}
+
+.advice-item::before
+{
+    width: 76px;
+    height: 76px;
+    margin: 0 0 30px;
+
+    content: '';
+
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.advice-item-food::before
+{
+    background-image: url('../img/burger.svg');
+}
+
+.advice-item-apartments::before
+{
+    background-image: url('../img/house.svg');
+}
+
+.advice-item-souvenirs::before
+{
+    background-image: url('../img/souvenirs.svg');
+}
+
+.advice-title
+{
+    font-size: 21px;
+    font-weight: bold;
+
+    margin: 0 0 21px;
+
+    color: #000;
+}
+
+.advice-text
+{
+    font-size: 14px;
+    line-height: 1.5;
+
+    width: 290px;
+    margin: 0;
+
+    color: #333;
+}
+
+.geo
+{
+    background-image: url('../img/mapofsedona.jpg');
+}
+
+.map-click-handler
+{
+    overflow: hidden;
+}
+
+.trip
+{
+    padding-top: 50px;
+}
+
+.trip-title
+{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    margin: 0 0 23px;
+    padding: 0 40px;
+
+    text-align: center;
+}
+
+.trip-subtitle
+{
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin: 0 auto 47px;
+    padding: 0 40px;
+
+    text-align: center;
+
+    color: #333;
+}
+
+.trip-search
+{
+    width: 570px;
+    margin: 0 auto 78px;
+
+    transition: 0s visibilty, .2s opacity ease-in;
+
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.trip-search-hidden
+{
+    visibility: hidden;
+
+    opacity: 0;
+}
+
+.trip-search-title
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+
+    display: block;
+
+    width: 570px;
+    margin: 0 auto;
+    padding: 30px 40px;
+
+    transition: .15s color, .15s background-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    background-color: #766357;
+}
+
+.trip-search-title:hover,
+.trip-search-title:focus
+{
+    outline: none;
+    background: #604e43;
+}
+
+.trip-search-title:active
+{
+    color: rgba(255, 255, 255, .3);
+    background: #503e33;
+}
+
+.trip-set
+{
+    margin: 0;
+    padding: 55px;
+
+    border: 0;
+}
+
+.trip-counts
+{
+    display: flex;
+
+    margin-bottom: 53px;
+}
+
+.trip-counts .form-input
+{
+    margin-bottom: 0;
+}
+
+.trip-search-button
+{
+    width: 100%;
+}
+
+.form-input
+{
+    display: flex;
+
+    margin-bottom: 30px;
+
+    align-items: center;
+}
+
+.form-input-short
+{
+    width: 50%;
+}
+
+.form-label
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+
+    flex-basis: 112px;
+}
+
+.form-label-children
+{
+    margin-right: 27px;
+
+    text-align: right;
+}
+
+.form-field
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+
+    box-sizing: border-box;
+    width: 40px;
+    padding: 4px 10px 4px;
+
+    transition: .15s background-color;
+    text-transform: uppercase;
+
+    color: #000;
+    border: solid 2px transparent;
+    background-color: #f2f2f2;
+
+    flex-grow: 1;
+}
+
+.form-field:hover
+{
+    background-color: #ebebeb;
+}
+
+.form-field:focus
+{
+    border-color: #e5e5e5;
+    outline: none;
+    background-color: #fff;
+}
+
+.form-counter
+{
+    display: flex;
+}
+
+.form-counter-button,
+.form-counter-field
+{
+    font-family: 'PT Sans', sans-serif;
+
+    width: 38px;
+    height: 38px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+.form-counter-button
+{
+    font-size: 28px;
+    line-height: 36px;
+
+    display: flex;
+
+    padding: 2px 0 0;
+
+    transition: .15s color;
+
+    color: #999; /* TODO: Проверить */
+    border: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.form-counter-button:hover,
+.form-counter-button:focus
+{
+    color: #000;
+    outline: none;
+}
+
+.form-counter-button:active
+{
+    color: #81b3d2;
+}
+
+.button
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+
+    padding: 17px 20px 15px;
+
+    transition: .15s color, .15s background-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    background-color: #81b3d2;
+}
+
+.button:hover,
+.button:focus
+{
+    outline: none;
+    background-color: #669ec0;
+}
+
+.button:active
+{
+    color: rgba(255, 255, 255, .3);
+    background-color: #5496bd;
+}
+
+.footer
+{
+    display: flex;
+
+    margin-top: auto;
+    padding: 36px;
+
+    background: rgba(255, 255, 255, .9);
+
+    align-items: center;
+}
+
+.footer-item
+{
+    text-align: center;
+
+    justify-content: center;
+}
+
+.footer-item:not(.footer-item-center)
+{
+    width: 330px;
+}
+
+.footer-item-center
+{
+    flex-grow: 1;
+}
+
+.hashtag
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+
+    margin: 0;
+
+    color: #000;
+}
+
+.socials
+{
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.social-item
+{
+    margin: 0 3px;
+}
+
+.social-link
+{
+    position: relative;
+
+    display: block;
+
+    width: 46px;
+    height: 46px;
+
+    transition: .15s background-color;
+
+    background: #81b3d2;
+}
+
+.social-link::before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    transition: .15s opacity;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-link-twitter::before
+{
+    background-image: url('../img/twitter.svg');
+}
+
+.social-link-facebook::before
+{
+    background-image: url('../img/fb-icon.svg');
+}
+
+.social-link-youtube::before
+{
+    background-image: url('../img/youtube.svg');
+}
+
+.social-link:hover,
+.social-link:focus
+{
+    background-color: #669ec0;
+}
+
+.social-link:active
+{
+    background-color: #5496bd;
+}
+
+.social-link:active::before
+{
+    opacity: .3;
+}
+
+.copyright
+{
+    font-size: 14px;
+    line-height: 1.86;
+
+    display: flex;
+
+    text-decoration: none;
+
+    color: #000;
+
+    align-items: center;
+}
+
+.copyright-img
+{
+    margin-left: 10px;
+}
+
+.overlay
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    background: rgba(255,255,255,.5);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-hidden
+{
+    display: none;
+}
+
+.modal-map
+{
+    width: 1200px;
+    max-width: 90%;
+    height: 80%;
+
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.modal-map iframe
+{
+    width: 100%;
+    height: 100%;
+}

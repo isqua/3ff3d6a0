@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sedona</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Информация</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Фото и видео</a></li>
+                </ul>
+                <div class="menu-logo">
+                    <img class="menu-logo-img" src="img/logo-sedona.svg" alt="Седона" width="140" height="71">
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Карта штата</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Гостиницы</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <img class="hero-img" src="img/welcome.png" alt="Welcome to the gorgeous Sedona">
+            </div>
+        </header>
+        <main class="main">
+            <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <section class="reasons">
+                <article class="reason">
+                    <h3 class="reason-title">Настоящий городок</h3>
+                    <p class="reason-number">1</p>
+                    <p class="reason-text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
+                </article>
+                <div class="reasons-img-container reasons-img-city">
+                </div>
+                <section class="advice">
+                    <article class="advice-item advice-item-apartments">
+                        <h3 class="advice-title">Жильё</h3>
+                        <p class="advice-text">Рекомендуем пожить в настоящем мотеле, всё&nbsp;как в&nbsp;кино!</p>
+                    </article>
+                    <article class="advice-item advice-item-food">
+                        <h3 class="advice-title">Еда</h3>
+                        <p class="advice-text">Всегда заказывайте фирменный бургер, вы не&nbsp;разочаруетесь!</p>
+                    </article>
+                    <article class="advice-item advice-item-souvenirs">
+                        <h3 class="advice-title">Сувениры</h3>
+                        <p class="advice-text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+                    </article>
+                </section>
+                <div class="reasons-img-container reasons-img-bridge">
+                </div>
+                <article class="reason">
+                    <h3 class="reason-title">Там есть Мост&nbsp;дьявола</h3>
+                    <p class="reason-number">2</p>
+                    <p class="reason-text">Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
+                </article>
+                <article class="reason reason-grey">
+                    <h3 class="reason-title">Небольшая площадь</h3>
+                    <p class="reason-number">3</p>
+                    <p class="reason-text">Все достопримечательности находятся очень близко</p>
+                </article>
+                <article class="reason reason-grey">
+                    <h3 class="reason-title">Красивая<br>дорога</h3>
+                    <p class="reason-number">4</p>
+                    <p class="reason-text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+                </article>
+                <article class="reason reason-grey">
+                    <h3 class="reason-title">Мало<br>туристов</h3>
+                    <p class="reason-number">5</p>
+                    <p class="reason-text">Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>
+                </article>
+            </section>
+            <section class="trip">
+                <h2 class="trip-title">Заинтересовались?</h2>
+                <p class="trip-subtitle">Укажите предполагаемые даты поездки,<br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
+                <button class="trip-search-title">Поиск гостиницы в Седоне</button>
+                <div class="geo">
+                    <div class="map-click-handler">
+                        <form action="https://echo.htmlacademy.ru" method="POST" class="trip-search">
+                            <fieldset class="trip-set">
+                                <label class="form-input">
+                                    <span class="form-label">Дата заезда:</span>
+                                    <input type="text" class="form-field" name="trip-start" value="24 апреля 2017">
+                                </label>
+                                <label class="form-input">
+                                    <span class="form-label">Дата выезда:</span>
+                                    <input type="text" class="form-field" name="trip-end" value="4 июля 2017">
+                                </label>
+                                <div class="trip-counts">
+                                    <div class="form-input form-input-short">
+                                        <span class="form-label">Взрослые:</span>
+                                        <span class="form-counter">
+                                            <button class="form-counter-button" type="button">−</button>
+                                            <input class="form-counter-field form-field" type="text" name="adults-count" value="2">
+                                            <button class="form-counter-button" type="button">+</button>
+                                        </span>
+                                    </div>
+                                    <div class="form-input form-input-short">
+                                        <span class="form-label form-label-children">Дети:</span>
+                                        <span class="form-counter">
+                                            <button class="form-counter-button" type="button">−</button>
+                                            <input class="form-counter-field form-field" type="text" name="children-count" value="0">
+                                            <button class="form-counter-button" type="button">+</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="button trip-search-button">Найти</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <footer class="footer">
+                        <p class="footer-item hashtag">#visitsedona</p>
+                        <ul class="footer-item footer-item-center socials">
+                            <li class="social-item"><a href="https://twitter.com/sedona" class="social-link social-link-twitter"></a></li>
+                            <li class="social-item"><a href="https://facebook.com/sedona" class="social-link social-link-facebook"></a></li>
+                            <li class="social-item"><a href="https://youtube.com/sedona" class="social-link social-link-youtube"></a></li>
+                        </ul>
+                        <a href="https://htmlacademy.ru" class="footer-item copyright">
+                            website by
+                            <img class="copyright-img" src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41">
+                        </a>
+                    </footer>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="overlay overlay-hidden">
+        <div class="modal-map">
+            <iframe
+                width="1200"
+                height="600"
+                style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
